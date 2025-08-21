@@ -79,6 +79,7 @@ export const AuthProvider = ({ children }) => {
         console.log("Socket disconnected (cleanup)");
       } catch (err) {
         // ignore
+        console.log("Socket cleanup error:", err.message); 
       }
       setSocket(null);
       setOnlineUsers([]);
