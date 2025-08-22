@@ -14,7 +14,7 @@ const server = http.createServer(app);
 // Initialize socket.io server
 export const io = new Server(server, {
     cors: {
-    origin: "https://chat-app-using-socketio-ynyr.vercel.app/",
+    origin: "https://chat-app-using-socketio-ynyr.vercel.app",
     methods: ["GET", "POST", "PUT"],
     credentials: true
     }
