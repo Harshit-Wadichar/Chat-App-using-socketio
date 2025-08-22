@@ -56,7 +56,7 @@ export const AuthProvider = ({ children }) => {
 
     const s = ioClient(backendUrl, {
       auth: { userId: authUser._id }, // use auth instead of query
-      transports: ["websocket"], // avoid XHR polling fallback
+      transports: ["websocket", "polling"], // avoid XHR polling fallback
       reconnectionAttempts: 5,
       reconnectionDelay: 1000,
     });
